@@ -5,6 +5,8 @@ import { fetchTMDB, getImageUrl } from '@/lib/tmdb';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const instant = false;
+
 export default async function HomePage() {
   const [
     trendingData, 
@@ -39,7 +41,7 @@ export default async function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
           
-          <div className="absolute top-16 left-4 right-4 z-20 block sm:hidden">
+          <div className="absolute top-16 left-4 right-4 z-30 block sm:hidden">
             <SearchBar />
           </div>
 
